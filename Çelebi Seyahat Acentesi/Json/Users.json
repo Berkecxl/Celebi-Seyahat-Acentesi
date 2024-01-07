@@ -1,0 +1,19 @@
+[
+  {
+    "username": "deneme1",
+    "password": "deneme1",
+    "name": "Yetkili",
+    "surname": "Hesabı",
+    "point": 0.0,
+    "workingPlace": "Dogus",
+    "staffId": 1
+  },
+  {
+    "username": "deneme2",
+    "password": "deneme2",
+    "name": "Müşteri",
+    "surname": "Hesabı",
+    "point": 1.2,
+    "customerId": 1
+  }
+]
