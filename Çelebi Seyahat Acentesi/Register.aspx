@@ -17,8 +17,8 @@
                 <form runat="server">
                     <asp:TextBox ID="txtUsername" runat="server" placeholder="Kullanıcı Adı" CssClass="opacity"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Şifre" CssClass="opacity"></asp:TextBox>
-                    <asp:TextBox ID="txtName" runat="server" TextMode="Password" placeholder="İsim" CssClass="opacity"></asp:TextBox>
-                    <asp:TextBox ID="txtSurname" runat="server" TextMode="Password" placeholder="Soyisim" CssClass="opacity"></asp:TextBox>
+                    <asp:TextBox ID="txtName" runat="server" placeholder="İsim" CssClass="opacity"></asp:TextBox>
+                    <asp:TextBox ID="txtSurname" runat="server" placeholder="Soyisim" CssClass="opacity"></asp:TextBox>
                     <asp:Button ID="btnKayitOl" runat="server" Text="KAYIT OL" CssClass="opacity" OnClick="btnKayitOl_Click" />
                     <asp:LinkButton ID="lnkGiris" runat="server" OnClick="lnkGiris_Click">GİRİŞ YAP</asp:LinkButton>
                 </form>

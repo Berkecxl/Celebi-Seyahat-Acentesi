@@ -1,10 +1,6 @@
 ﻿using Çelebi_Seyahat_Acentesi.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Çelebi_Seyahat_Acentesi
 {

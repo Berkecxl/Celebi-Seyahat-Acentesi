@@ -1,4 +1,5 @@
 ﻿using Çelebi_Seyahat_Acentesi.Model;
+using Çelebi_Seyahat_Acentesi.Service;
 using Çelebi_Seyahat_Acentesi.Validator;
 using System;
 using System.Globalization;
@@ -43,7 +44,8 @@ namespace Çelebi_Seyahat_Acentesi
                 title = "customer"
             };
 
-
+            UserService.AddUser(user);
+            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Başarılı bir şekilde kaydınız gerçekleşti.');", true);
         }
 
         protected void lnkGiris_Click(object sender, EventArgs e)
