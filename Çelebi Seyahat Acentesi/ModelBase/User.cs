@@ -9,7 +9,6 @@ namespace Çelebi_Seyahat_Acentesi.Model
     {
         public string username { get; set; }
         public string password { get; set; }
-        public string title { get; set; }
         public string name { get; set; }
         public string surname { get; set; }
         public double point { get; set; }

@@ -1,1 +1,25 @@
-[{"username":"deneme1","password":"deneme1","title":null,"name":"Yetkili","surname":"Hesabı","point":0.0},{"username":"deneme2","password":"deneme2","title":null,"name":"Müşteri","surname":"Hesabı","point":1.2},{"username":"deneme3","password":"Deneme3","title":"customer","name":"Deneme","surname":"Hesabı","point":0.0}]
+[
+  {
+    "username": "deneme1",
+    "password": "deneme1",
+    "name": "Yetkili",
+    "surname": "Hesabı",
+    "point": 0.0
+  },
+  {
+    "customerId": 1,
+    "username": "deneme2",
+    "password": "deneme2",
+    "name": "Müşteri",
+    "surname": "Hesabı",
+    "point": 1.2
+  },
+  {
+    "customerId": 3,
+    "username": "deneme3",
+    "password": "Deneme3",
+    "name": "Deneme",
+    "surname": "Hesabı",
+    "point": 0.0
+  }
+]
