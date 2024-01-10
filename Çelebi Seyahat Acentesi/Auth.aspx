@@ -17,6 +17,9 @@
                 <form runat="server">
                     <asp:TextBox ID="txtUsername" runat="server" placeholder="Kullanıcı Adı" CssClass="opacity"></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Şifre" CssClass="opacity"></asp:TextBox>
+                    <div class="alert alert-danger" id="loginError" runat="server" visible="false">
+                    Kullanıcı adı veya şifre hatalı.
+                    </div>
                     <asp:Button ID="btnGiris" runat="server" Text="GİRİŞ YAP" CssClass="opacity" OnClick="btnGiris_Click" />
                     <asp:LinkButton ID="lnkKayitOl" runat="server" OnClick="lnkKayitOl_Click">KAYIT OL</asp:LinkButton>
                 </form>

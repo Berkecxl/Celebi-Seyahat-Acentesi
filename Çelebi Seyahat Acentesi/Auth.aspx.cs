@@ -27,7 +27,7 @@ namespace Çelebi_Seyahat_Acentesi
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Kullanıcı adı veya parola yanlış.');", true);
+                    loginError.Visible = true;
                 }
             }
 

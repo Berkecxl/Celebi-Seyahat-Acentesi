@@ -120,11 +120,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\mainpage.css" />
     <Content Include="Content\Register.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\hotel.png" />
+    <Content Include="Images\reward.png" />
+    <Content Include="Images\train.png" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\auth.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />

@@ -1,44 +1,32 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Çelebi_Seyahat_Acentesi._Default" %>
+﻿<%@ Page Title="Anasayfa" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Çelebi_Seyahat_Acentesi._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
-
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Çelebi Seyahat Acentesi</h1>
+            <p>Çelebi Seyahat Acentesi, seyahatlerinizde size en iyi deneyimi sunmayı hedefler. Tatil ve seyahatleriniz için en geniş seçenekler ve en uygun fiyatlarla hizmetinizdeyiz!</p>
+        <a href="TicketList.aspx" class="btn">Hemen Bilet Al</a>
         </div>
-    </main>
+    </div>
 
+    <section class="services-section">
+        <div class="container">
+            <h2>Neler Yapabilirsiniz?</h2>
+            <div class="service">
+                <img src="Images/train.png" alt="Uçak" />
+                <h3>Bilet Satın Al</h3>
+                <p>Çeşitli firmalardan bilet satın alabilirsiniz. Uçan Türk, Devlet Demir Yolları (TCDD) ve YTUR otobüs firmalarının biletleri mevcut ve ileride başka firmaların biletleri de eklenmeyi planlıyoruz.</p>
+            </div>
+            <div class="service">
+                <img src="Images/hotel.png" alt="Otel" />
+                <h3>Otel Rezervasyonu</h3>
+                <p>Harika tatil fırsatları için otel rezervasyonlarınızı yapabilirsiniz. Çeşitli otellerle anlaşma imzaladık ve müşterilerimize geniş bir seçenek sunuyoruz.</p>
+            </div>
+            <div class="service">
+                <img src="Images/reward.png" alt="Ödüller" />
+                <h3>Puan Kazanın</h3>
+                <p>Yaptığınız seyahatlerde ve alışverişlerde puanlar kazanabilirsiniz. Özel olarak belirlenen kurallarla, seyahatlerinizdeki harcamalarınıza karşılık puanlar kazanabilir ve bunları sonraki seyahatlerinizde kullanabilirsiniz.</p>
+            </div>
+        </div>
+    </section>
 </asp:Content>
