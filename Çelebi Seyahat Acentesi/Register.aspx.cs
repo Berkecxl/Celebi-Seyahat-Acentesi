@@ -42,6 +42,7 @@ namespace Çelebi_Seyahat_Acentesi
                 name = enteredName,
                 surname = enteredSurname,
                 point = 0,
+                userType = "customer",
                 customerId = Generate_CustomerId(),
             };
 

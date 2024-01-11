@@ -8,17 +8,8 @@ namespace Çelebi_Seyahat_Acentesi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CheckUserAccess();
+
         }
 
-        private void CheckUserAccess()
-        {
-            User currentUser = (User)Session["CurrentUser"];
-
-            if (currentUser == null)
-            {
-                Response.Redirect("Auth.aspx");
-            }
-        }
     }
 }

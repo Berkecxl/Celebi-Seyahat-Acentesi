@@ -1,10 +1,13 @@
 [
   {
+    "staffId" : 1,
     "username": "deneme1",
     "password": "deneme1",
     "name": "Yetkili",
     "surname": "Hesabı",
-    "point": 0.0
+    "point": 0.0,
+    "workingPlace": "dogus",
+    "userType": "staff"
   },
   {
     "customerId": 1,
@@ -12,7 +15,8 @@
     "password": "deneme2",
     "name": "Müşteri",
     "surname": "Hesabı",
-    "point": 1.2
+    "point": 1.2,
+    "userType": "customer"
   },
   {
     "customerId": 3,
@@ -20,6 +24,7 @@
     "password": "Deneme3",
     "name": "Deneme",
     "surname": "Hesabı",
-    "point": 0.0
+    "point": 0.0,
+    "userType": "customer"
   }
 ]

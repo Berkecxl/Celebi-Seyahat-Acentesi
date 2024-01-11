@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Çelebi_Seyahat_Acentesi.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Çelebi_Seyahat_Acentesi.SiteMaster" %>
 
 <!DOCTYPE html>
 
@@ -53,7 +53,9 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/TicketList.aspx">Bilet Satın Al</a></li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Auth.aspx">Çıkış</a></li>
+                   <li class="nav-item" id="profile" runat="server"><a class="nav-link" runat="server" href="~/Profile.aspx">Profil</a></li>
+                   <li class="nav-item" id="logout" runat="server"><a class="nav-link" runat="server" href="~/Auth.aspx">Çıkış Yap</a></li>
+                   <li class="nav-item" id="signIn" runat="server"><a class="nav-link" runat="server" href="~/Auth.aspx">Giriş Yap</a></li>                   
                     </ul>
                 </div>
             </div>

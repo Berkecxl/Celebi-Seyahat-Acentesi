@@ -129,6 +129,7 @@
     <Content Include="Images\hotel.png" />
     <Content Include="Images\reward.png" />
     <Content Include="Images\train.png" />
+    <Content Include="Profile.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\auth.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -188,7 +189,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
-    <Content Include="Site.Master" />
+    <None Include="Site.Master" />
     <Content Include="TicketList.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -222,6 +223,13 @@
     <Compile Include="ModelBase\User.cs" />
     <Compile Include="Model\Staff.cs" />
     <Compile Include="Model\Ticket.cs" />
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

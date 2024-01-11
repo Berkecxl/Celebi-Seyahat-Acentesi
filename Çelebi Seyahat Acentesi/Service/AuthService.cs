@@ -15,20 +15,31 @@ namespace Çelebi_Seyahat_Acentesi.Service
         {
             string filePath = HttpContext.Current.Server.MapPath(Constants.UsersJson);
 
-            if (File.Exists(filePath))
+            string jsonFile = File.ReadAllText(filePath);
+            List<User> userList = JsonConvert.DeserializeObject<List<User>>(jsonFile);
+
+            User user = userList.Find(u => u.username == username && u.password == password);
+
+            if (user == null)
             {
-                string jsonFile = File.ReadAllText(filePath);
-                List<User> userList = JsonConvert.DeserializeObject<List<User>>(jsonFile);
-
-                User user = userList.Find(u => u.username == username && u.password == password);
-
-                if (user != null)
-                {
-                    HttpContext.Current.Session["CurrentUser"] = user;
-                    return true;
-                }
+                return false;
             }
-            return false;
+
+            if (user.userType == "staff")
+            {
+                List<Staff> staffList = JsonConvert.DeserializeObject<List<Staff>>(jsonFile);
+                Staff staffUser = staffList.Find(u => u.username == username && u.password == password);
+                HttpContext.Current.Session["CurrentUser"] = staffUser;
+            }
+            else
+            {
+                List<Customer> customerList = JsonConvert.DeserializeObject<List<Customer>>(jsonFile);
+                Customer customerUser = customerList.Find(u => u.username == username && u.password == password);
+                HttpContext.Current.Session["CurrentUser"] = customerUser;
+            }
+
+            return true;
         }
+
     }
 }
