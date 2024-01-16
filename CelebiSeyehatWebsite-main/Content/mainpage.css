@@ -1,0 +1,91 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #ffd633;
+    }
+
+.services-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .service img {
+        width: 200px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .service h3 {
+        font-size: 1.5em;
+    }
+
+    .service p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Viewport'un tam yüksekliği */
+    margin: 0;
+}
+
+.container.body-content {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;  
+}

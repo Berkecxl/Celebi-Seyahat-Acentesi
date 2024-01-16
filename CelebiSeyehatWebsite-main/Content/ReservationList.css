@@ -1,0 +1,122 @@
+﻿.container-reservation-list {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #f3f3f3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title-ticket-list {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.reservation-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .reservation-list th, .reservation-list td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .reservation-list th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    .reservation-list thead th {
+        font-weight: bold;
+    }
+
+    .reservation-list tbody td {
+        color: #666;
+    }
+
+    .reservation-list .chkPurchasable {
+        text-align: center;
+    }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close-button:hover,
+    .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.confirm-button, .cancel-button {
+    padding: 8px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal-content h2, .modal-content p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.confirm-button {
+    background-color: #4CAF50; /* Yeşil */
+    color: white;
+}
+
+.cancel-button {
+    background-color: #f44336; /* Kırmızı */
+    color: white;
+}
+
+.reservation-confirmation {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+.checkmark {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 5px;
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "username": "deneme1",
+    "password": "deneme1",
+    "name": "Yetkili",
+    "surname": "Hesabı",
+    "point": 0.0,
+    "userType": "staff",
+    "ownTickets": [],
+    "ownReservations": []
+  },
+  {
+    "Id": 2,
+    "username": "deneme2",
+    "password": "deneme2",
+    "name": "Müşteri",
+    "surname": "Hesabı",
+    "point": 1.2,
+    "userType": "customer",
+    "ownTickets": null,
+    "ownReservations": null
+  },
+  {
+    "Id": 3,
+    "username": "deneme3",
+    "password": "Deneme3",
+    "name": "Deneme",
+    "surname": "Hesabı",
+    "point": 0.0,
+    "userType": "customer",
+    "ownTickets": null,
+    "ownReservations": null
+  },
+  {
+    "Id": 4,
+    "username": "admin1",
+    "password": "admin1",
+    "name": "Hasan",
+    "surname": "Turhan",
+    "point": 0.0,
+    "userType": "customer",
+    "ownTickets": null,
+    "ownReservations": null
+  },
+  {
+    "Id": 5,
+    "username": "admin1",
+    "password": "Admin1",
+    "name": "Hasan",
+    "surname": "Turhan",
+    "point": 0.0,
+    "userType": "customer",
+    "ownTickets": null,
+    "ownReservations": null
+  }
+]
