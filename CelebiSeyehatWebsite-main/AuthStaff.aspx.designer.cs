@@ -11,52 +11,43 @@ namespace Çelebi_Seyahat_Acentesi
 {
 
 
-    public partial class SiteMaster
+    public partial class AuthStaff
     {
 
         /// <summary>
-        /// staffPanel control.
+        /// txtStaffId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl staffPanel;
+        protected global::System.Web.UI.WebControls.TextBox txtStaffId;
 
         /// <summary>
-        /// profile control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl profile;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// logout control.
+        /// loginError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl logout;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl loginError;
 
         /// <summary>
-        /// signIn control.
+        /// btnGiris control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl signIn;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btnGiris;
     }
 }

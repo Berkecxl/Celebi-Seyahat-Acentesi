@@ -102,8 +102,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AuthBase.aspx" />
+    <Content Include="AuthStaff.aspx" />
     <Content Include="Auth.aspx" />
     <Content Include="Content\Auth.css" />
+    <Content Include="Content\AuthBase.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -120,6 +123,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Log.css" />
     <Content Include="Content\mainpage.css" />
     <Content Include="Content\Register.css" />
     <Content Include="Content\ReservationList.css" />
@@ -171,6 +175,8 @@
     <Content Include="Json\Tickets.json" />
     <Content Include="Json\Merchants.json" />
     <Content Include="Json\Reservations.json" />
+    <Content Include="Json\Staffs.json" />
+    <Content Include="Json\Logs.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -199,6 +205,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <None Include="Site.Master" />
+    <Content Include="StaffPanel.aspx" />
     <Content Include="TicketList.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -206,6 +213,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthBase.aspx.cs">
+      <DependentUpon>AuthBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthBase.aspx.designer.cs">
+      <DependentUpon>AuthBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AuthStaff.aspx.cs">
+      <DependentUpon>AuthStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuthStaff.aspx.designer.cs">
+      <DependentUpon>AuthStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Auth.aspx.cs">
@@ -226,12 +247,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ModelBase\Merchant.cs" />
-    <Compile Include="ModelBase\Reservation.cs" />
-    <Compile Include="Model\Customer.cs" />
-    <Compile Include="ModelBase\User.cs" />
+    <Compile Include="Model\Log.cs" />
+    <Compile Include="Model\Merchant.cs" />
+    <Compile Include="Model\Reservation.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Model\Staff.cs" />
-    <Compile Include="ModelBase\Ticket.cs" />
+    <Compile Include="Model\Ticket.cs" />
     <Compile Include="Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,6 +276,7 @@
       <DependentUpon>ReservationList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Service\AuthService.cs" />
+    <Compile Include="Service\LogService.cs" />
     <Compile Include="Service\ReservationService.cs" />
     <Compile Include="Service\TicketService.cs" />
     <Compile Include="Service\UserService.cs" />
@@ -271,6 +293,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StaffPanel.aspx.cs">
+      <DependentUpon>StaffPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffPanel.aspx.designer.cs">
+      <DependentUpon>StaffPanel.aspx</DependentUpon>
     </Compile>
     <Compile Include="TicketList.aspx.cs">
       <DependentUpon>TicketList.aspx</DependentUpon>

@@ -1,1 +1,29 @@
-[{"Id":1,"Company":"Company A","Time":"2024-01-07T08:30:00","ExitPoint":"Exit 1","DestinationPoint":"Destination 1","Price":25.5,"isPurchasable":false},{"Id":2,"Company":"Company B","Time":"2024-01-08T09:45:00","ExitPoint":"Exit 2","DestinationPoint":"Destination 2","Price":30.75,"isPurchasable":false},{"Id":3,"Company":"Company C","Time":"2024-01-09T10:15:00","ExitPoint":"Exit 3","DestinationPoint":"Destination 3","Price":20.0,"isPurchasable":true}]
+[
+  {
+    "Id": 1,
+    "Company": "Company A",
+    "Time": "2024-01-07T08:30:00",
+    "ExitPoint": "Exit 1",
+    "DestinationPoint": "Destination 1",
+    "Price": 25.5,
+    "isPurchasable": true
+  },
+  {
+    "Id": 2,
+    "Company": "Company B",
+    "Time": "2024-01-08T09:45:00",
+    "ExitPoint": "Exit 2",
+    "DestinationPoint": "Destination 2",
+    "Price": 30.75,
+    "isPurchasable": true
+  },
+  {
+    "Id": 3,
+    "Company": "Company C",
+    "Time": "2024-01-09T10:15:00",
+    "ExitPoint": "Exit 3",
+    "DestinationPoint": "Destination 3",
+    "Price": 20.0,
+    "isPurchasable": true
+  }
+]

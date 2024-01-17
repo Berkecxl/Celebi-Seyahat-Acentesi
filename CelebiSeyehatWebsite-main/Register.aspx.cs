@@ -36,20 +36,18 @@ namespace Çelebi_Seyahat_Acentesi
             }
 
             
-            Customer customer = new Customer
+            User user = new User
             {
                 username = enteredUsername,
                 password = enteredPassword,
                 name = enteredName,
                 surname = enteredSurname,
                 point = 0,
-                userType = "customer",
                 ownTickets = new List<Ticket>(),
-                ownReservations = new List<Reservation>(),
-                customerId = Generate_CustomerId(),
+                ownReservations = new List<Reservation>()
             };
 
-            UserService.AddUser(customer);
+            UserService.AddUser(user);
             ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Başarılı bir şekilde kaydınız gerçekleşti.');", true);
         }
 

@@ -41,6 +41,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
                     UserService.AddFeatureToUser(user);
                     UpdateTicketPurchaseStatus(ticket);
 
+                    LogService.LogAction(ticket.Company, user.username, ticket.Price);
                     return true;
                 }
 

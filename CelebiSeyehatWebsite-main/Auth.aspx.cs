@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace Çelebi_Seyahat_Acentesi
 {
-    public partial class Auth : System.Web.UI.Page
+    public partial class Auth : Page
     {
         
             protected void Page_Load(object sender, EventArgs e)

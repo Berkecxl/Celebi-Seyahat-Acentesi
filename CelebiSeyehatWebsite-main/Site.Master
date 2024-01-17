@@ -55,9 +55,10 @@
 
                     </ul>
                     <ul class="navbar-nav ml-auto">
+                  <li class="nav-item" id="staffPanel" runat="server"><a class="nav-link" runat="server" href="~/StaffPanel.aspx">Yetkili Panel</a></li>
                    <li class="nav-item" id="profile" runat="server"><a class="nav-link" runat="server" href="~/Profile.aspx">Profil</a></li>
-                   <li class="nav-item" id="logout" runat="server"><a class="nav-link" runat="server" href="~/Auth.aspx">Çıkış Yap</a></li>
-                   <li class="nav-item" id="signIn" runat="server"><a class="nav-link" runat="server" href="~/Auth.aspx">Giriş Yap</a></li>                   
+                   <li class="nav-item" id="logout" runat="server"><a class="nav-link" runat="server" href="~/AuthBase.aspx">Çıkış Yap</a></li>
+                   <li class="nav-item" id="signIn" runat="server"><a class="nav-link" runat="server" href="~/AuthBase.aspx">Giriş Yap</a></li>                   
                     </ul>
                 </div>
             </div>

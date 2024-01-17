@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Sockets;
 using System.Web;
 
 namespace Çelebi_Seyahat_Acentesi.Service
@@ -14,7 +15,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
     {
         public static List<Reservation> getReservations()
         {
-            string filePath = HttpContext.Current.Server.MapPath(Constants.ReservationJson);
+            string filePath = HttpContext.Current.Server.MapPath(Constants.ReservationsJson);
             string jsonFile = File.ReadAllText(filePath);
 
             List<Reservation> reservationList = JsonConvert.DeserializeObject<List<Reservation>>(jsonFile);
@@ -42,6 +43,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
                     UserService.AddFeatureToUser(user);
                     UpdateReservationPurchaseStatus(reservation);
 
+                    LogService.LogAction(reservation.Hotel, user.username, reservation.Price);
                     return true;
                 }
 
@@ -78,7 +80,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
 
         private static void SaveReservationList(List<Reservation> reservationList)
         {
-            File.WriteAllText(HttpContext.Current.Server.MapPath(Constants.ReservationJson), JsonConvert.SerializeObject(reservationList));
+            File.WriteAllText(HttpContext.Current.Server.MapPath(Constants.ReservationsJson), JsonConvert.SerializeObject(reservationList));
         }
     }
 }

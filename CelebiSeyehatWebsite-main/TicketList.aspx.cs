@@ -37,7 +37,7 @@ namespace Çelebi_Seyahat_Acentesi
 
             if (currentUser == null)
             {
-                Response.Redirect("Auth.aspx");
+                Response.Redirect("AuthBase.aspx");
             }
         }
 

@@ -11,7 +11,7 @@
     "Hotel": "Hotel B",
     "Time": "2024-02-05T15:45:00",
     "Price": 200.50,
-    "isPurchasable": false
+    "isPurchasable": true
   },
   {
     "Id": 3,
@@ -32,6 +32,6 @@
     "Hotel": "Hotel E",
     "Time": "2024-05-08T12:10:00",
     "Price": 250.00,
-    "isPurchasable": false
+    "isPurchasable": true
   }
 ]

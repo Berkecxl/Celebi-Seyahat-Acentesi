@@ -10,14 +10,15 @@ namespace Çelebi_Seyahat_Acentesi
         {
             profile.Visible = false;   
             logout.Visible = false;
-            CheckUserAccess();
+            CheckAccess();
         }
 
-        private void CheckUserAccess()
+        private void CheckAccess()
         {
             var user = Session["CurrentUser"];
+            var staff = Session["CurrentStaff"];
 
-            if (user != null)
+            if (user != null || staff != null)
             {
                 logout.Visible = true;
                 profile.Visible = true;
@@ -30,7 +31,7 @@ namespace Çelebi_Seyahat_Acentesi
             Session.Clear(); 
             Session.Abandon(); 
 
-            Response.Redirect("~/Auth.aspx"); 
+            Response.Redirect("~/AuthBase.aspx"); 
         }
 
     }

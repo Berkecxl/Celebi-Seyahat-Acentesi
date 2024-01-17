@@ -5,9 +5,12 @@ using System.Web;
 
 namespace Çelebi_Seyahat_Acentesi.Model
 {
-    public class Staff : User
+    public class Staff 
     {
-        public int staffId { get; set; }
+        public long staffId { get; set; }
+        public string password { get; set; }
+        public string name { get; set; }
+        public string surname { get; set; }
         public string workingPlace { get; set; }
     }
 }

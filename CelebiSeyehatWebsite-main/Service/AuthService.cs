@@ -17,29 +17,31 @@ namespace Çelebi_Seyahat_Acentesi.Service
 
             string jsonFile = File.ReadAllText(filePath);
             List<User> userList = JsonConvert.DeserializeObject<List<User>>(jsonFile);
-
             User user = userList.Find(u => u.username == username && u.password == password);
 
             if (user == null)
             {
                 return false;
             }
-
-            if (user.userType == "staff")
-            {
-                List<Staff> staffList = JsonConvert.DeserializeObject<List<Staff>>(jsonFile);
-                Staff staffUser = staffList.Find(u => u.username == username && u.password == password);
-                HttpContext.Current.Session["CurrentUser"] = staffUser;
-            }
-            else
-            {
-                List<Customer> customerList = JsonConvert.DeserializeObject<List<Customer>>(jsonFile);
-                Customer customerUser = customerList.Find(u => u.username == username && u.password == password);
-                HttpContext.Current.Session["CurrentUser"] = customerUser;
-            }
-
+            
+            HttpContext.Current.Session["CurrentUser"] = user;
             return true;
         }
+        public static bool IsStaffLogin(string staffId, string password)
+        {
+            string filePath = HttpContext.Current.Server.MapPath(Constants.StaffsJson);
 
+            string jsonFile = File.ReadAllText(filePath);
+            List<Staff> staffList = JsonConvert.DeserializeObject<List<Staff>>(jsonFile);
+            Staff staff = staffList.Find(s => s.staffId == Convert.ToInt64(staffId) && s.password == password);
+
+            if (staff == null)
+            {
+                return false;
+            }
+
+            HttpContext.Current.Session["CurrentStaff"] = staff;
+            return true;
+        }
     }
 }

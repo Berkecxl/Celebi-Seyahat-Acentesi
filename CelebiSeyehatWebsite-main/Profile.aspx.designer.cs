@@ -15,6 +15,15 @@ namespace Çelebi_Seyahat_Acentesi
     {
 
         /// <summary>
+        /// phUsername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phUsername;
+
+        /// <summary>
         /// lblUsername control.
         /// </summary>
         /// <remarks>
@@ -42,6 +51,15 @@ namespace Çelebi_Seyahat_Acentesi
         protected global::System.Web.UI.WebControls.Label lblSurname;
 
         /// <summary>
+        /// phPoint control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phPoint;
+
+        /// <summary>
         /// lblPoint control.
         /// </summary>
         /// <remarks>
@@ -51,22 +69,40 @@ namespace Çelebi_Seyahat_Acentesi
         protected global::System.Web.UI.WebControls.Label lblPoint;
 
         /// <summary>
-        /// phCustomerId control.
+        /// phOwnTickets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phCustomerId;
+        protected global::System.Web.UI.WebControls.PlaceHolder phOwnTickets;
 
         /// <summary>
-        /// lblCustomerId control.
+        /// lblOwnTickets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCustomerId;
+        protected global::System.Web.UI.WebControls.Label lblOwnTickets;
+
+        /// <summary>
+        /// phOwnReservations control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phOwnReservations;
+
+        /// <summary>
+        /// lblOwnReservations control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOwnReservations;
 
         /// <summary>
         /// phStaffId control.

@@ -1,0 +1,23 @@
+[
+  {
+    "staffId": 1,
+    "password": "123456",
+    "name": "Berke",
+    "surname": "Çelikel",
+    "workingPlace": "Trendiol"
+  },
+  {
+    "staffId": 2,
+    "password": "123456",
+    "name": "Şevval",
+    "surname": "Bayram",
+    "workingPlace": "B202"
+  },
+  {
+    "staffId": 3,
+    "password": "123456",
+    "name": "Duygu",
+    "surname": "Kimsesiz",
+    "workingPlace": "Doğuş"
+  }
+]

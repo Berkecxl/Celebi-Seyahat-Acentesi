@@ -10,7 +10,7 @@
         <link href="Content/ReservationList.css" rel="stylesheet" />
         <script type="text/javascript">
             function showModal(reservationInfo) {
-                document.getElementById('modalText').innerHTML = reservationInfo + " biletini satın almak istediğinize emin misiniz?";
+                document.getElementById('modalText').innerHTML = reservationInfo + " rezervasyonunu yapmak istediğinize emin misiniz?";
             }
             function hideModal() {
                 document.getElementById('<%= pnlConfirmModal.ClientID %>').style.display = 'none';
@@ -23,7 +23,7 @@
     </head>
     <body>
         <div class="container-reservation-list">
-            <h2 class="section-title-reservation-list">Bilet Satın Al</h2>
+            <h2 class="section-title-reservation-list">Rezervasyon Yap</h2>
             <asp:GridView ID="gvReservationList" runat="server" DataKeyNames="Id" AutoGenerateColumns="False" CssClass="reservation-list">
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="ID" />
