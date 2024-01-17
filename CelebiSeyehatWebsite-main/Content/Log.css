@@ -19,3 +19,18 @@
     line-height: 1.6;
     color: #555;
 }
+
+#lnkTicketApprove {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    #lnkTicketApprove:hover {
+        background-color: #2980b9;
+    }

@@ -15,6 +15,7 @@ namespace Çelebi_Seyahat_Acentesi.Model
         public string surname { get; set; }
         public double point { get; set; }
         public List<Ticket> ownTickets { get; set; }
+        public List<Ticket> waitingTickets { get; set; }
         public List<Reservation> ownReservations { get; set; }
     }
 }

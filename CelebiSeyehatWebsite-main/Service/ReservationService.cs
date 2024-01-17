@@ -43,7 +43,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
                     UserService.AddFeatureToUser(user);
                     UpdateReservationPurchaseStatus(reservation);
 
-                    LogService.LogAction(reservation.Hotel, user.username, reservation.Price);
+                    LogService.LogAction("Reservation", user.username, reservation.Price);
                     return true;
                 }
 

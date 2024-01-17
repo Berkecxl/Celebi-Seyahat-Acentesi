@@ -37,11 +37,40 @@ namespace Çelebi_Seyahat_Acentesi.Service
                 if (ticket != null)
                 {
                     ticket.isPurchasable = false;
-                    user.ownTickets.Add(ticket);
+                    user.waitingTickets.Add(ticket);
+                    ticket.OwnerUsername = user.username;
+
                     UserService.AddFeatureToUser(user);
                     UpdateTicketPurchaseStatus(ticket);
 
-                    LogService.LogAction(ticket.Company, user.username, ticket.Price);
+                    LogService.LogAction("Ticket Sale", user.username, ticket.Price);
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public static bool isTicketApproveSuccess(Ticket ticket, Staff staff)
+        {
+
+            try
+            {
+                if (ticket != null)
+                {
+                    User user = UserService.getUserByUsername(ticket.OwnerUsername);
+
+                    user.waitingTickets.Remove(ticket);
+                    ticket.isApproved = true;
+                    user.ownTickets.Add(ticket);
+                    UserService.AddFeatureToUser(user);
+                    UpdateTicketApproveStatus(ticket);
+
+                    LogService.LogAction("Ticket Approve", staff.name, ticket.Price);
                     return true;
                 }
 
@@ -66,6 +95,31 @@ namespace Çelebi_Seyahat_Acentesi.Service
                 if (index != -1)
                 {
                     ticketList[index].isPurchasable = updatedTicket.isPurchasable;
+                    ticketList[index].isApproved = updatedTicket.isApproved;
+                    ticketList[index].OwnerUsername = updatedTicket.OwnerUsername;
+
+                    SaveTicketList(ticketList);
+                }
+            }
+            else
+            {
+                //TODO hata mesajı
+            }
+        }
+
+        public static void UpdateTicketApproveStatus(Ticket updatedTicket)
+        {
+            List<Ticket> ticketList = getTickets();
+
+            Ticket ticket = getTicketById(updatedTicket.Id);
+
+            if (ticket != null)
+            {
+                int index = ticketList.FindIndex(t => t.Id == updatedTicket.Id);
+
+                if (index != -1)
+                {
+                    ticketList[index].isApproved = updatedTicket.isApproved;
 
                     SaveTicketList(ticketList);
                 }

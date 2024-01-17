@@ -14,5 +14,7 @@ namespace Çelebi_Seyahat_Acentesi.Model
         public string DestinationPoint { get; set; }
         public decimal Price { get; set; }
         public bool isPurchasable { get; set;}
+        public bool isApproved { get; set;}
+        public string OwnerUsername { get; set; }
     }
 }

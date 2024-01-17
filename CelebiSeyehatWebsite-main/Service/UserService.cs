@@ -39,6 +39,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
 
                 if (index != -1)
                 {
+                    userList[index].waitingTickets = updatedUser.waitingTickets;
                     userList[index].ownReservations = updatedUser.ownReservations;
                     userList[index].ownTickets = updatedUser.ownTickets;
 

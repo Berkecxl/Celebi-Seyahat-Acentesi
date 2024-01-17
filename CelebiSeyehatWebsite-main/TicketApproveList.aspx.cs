@@ -1,24 +1,23 @@
 ﻿using Çelebi_Seyahat_Acentesi.Model;
 using Çelebi_Seyahat_Acentesi.Service;
-using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
-using System.Web.Optimization;
-using System.Web.Services.Description;
+using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Çelebi_Seyahat_Acentesi
 {
-    public partial class TicketList : Page
+    public partial class TicketApproveList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
             if (!IsPostBack)
             {
-                CheckUserAccess();
+                CheckStaffAccess();
                 DisplayTicketList();
             }
         }
@@ -30,7 +29,8 @@ namespace Çelebi_Seyahat_Acentesi
 
             foreach (Ticket ticket in tickets)
             {
-                if (ticket.OwnerUsername == null) {
+                if (ticket.OwnerUsername != null)
+                {
                     ticketDataSource.Add(ticket);
                 }
             }
@@ -39,11 +39,11 @@ namespace Çelebi_Seyahat_Acentesi
             gvTicketList.DataBind();
         }
 
-        private void CheckUserAccess()
+        private void CheckStaffAccess()
         {
-            User currentUser = (User)Session["CurrentUser"];
+            Staff currentStaff = (Staff)Session["CurrentStaff"];
 
-            if (currentUser == null)
+            if (currentStaff == null)
             {
                 Response.Redirect("AuthBase.aspx");
             }
@@ -61,21 +61,19 @@ namespace Çelebi_Seyahat_Acentesi
 
         protected void btnConfirm_Click(object sender, EventArgs e)
         {
-            string message;
-            User currentUser = (User)Session["CurrentUser"];
+            Staff currentUser = (Staff)Session["CurrentStaff"];
             int currentTicketId = (int)Session["CurrentTicketId"];
+            Ticket currentTicket = TicketService.getTicketById(currentTicketId);
 
-            if (TicketService.isTicketSaleSuccess(currentTicketId, currentUser))
+            if (TicketService.isTicketApproveSuccess(currentTicket, currentUser))
             {
             }
             else
             {
             }
 
-
             Thread.Sleep(3000);
             Response.Redirect(Request.RawUrl);
         }
-
     }
 }

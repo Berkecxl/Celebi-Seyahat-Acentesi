@@ -206,6 +206,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <None Include="Site.Master" />
     <Content Include="StaffPanel.aspx" />
+    <Content Include="TicketApproveList.aspx" />
     <Content Include="TicketList.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -300,6 +301,13 @@
     </Compile>
     <Compile Include="StaffPanel.aspx.designer.cs">
       <DependentUpon>StaffPanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TicketApproveList.aspx.cs">
+      <DependentUpon>TicketApproveList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketApproveList.aspx.designer.cs">
+      <DependentUpon>TicketApproveList.aspx</DependentUpon>
     </Compile>
     <Compile Include="TicketList.aspx.cs">
       <DependentUpon>TicketList.aspx</DependentUpon>

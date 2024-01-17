@@ -56,7 +56,7 @@ namespace Çelebi_Seyahat_Acentesi.Service
 
         private static int GenerateId(List <Log> loglist)
         {
-            return loglist.Any() ? loglist.Max(log => log.Id) + 1 : 0;
+            return loglist.Any() ? loglist.Max(log => log.Id) + 1 : 1;
         }
     }
 }
